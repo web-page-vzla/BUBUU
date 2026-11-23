@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BUBUU - Galletas y postres artesanales en La Guaira, Venezuela. Ventas al detal, aliados comerciales mayoristas y mesas dulces para eventos.">
+    <title>BUBUU | Galletas Artesanales, Aliados & Eventos - La Guaira</title>
+
+    <!-- Ícono de la pestaña del navegador (favicon) vinculado a logo.png -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    
+    <!-- Tipografías de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / BARRA DE NAVEGACIÓN -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo" aria-label="Inicio BUBUU">
+                <span class="logo-brand">
+                    <span class="letter-b">B</span><span class="letter-u">U</span><span class="letter-b">B</span><span class="letter-u">U</span><span class="letter-u">U</span>
+                </span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#aliados" class="nav-link">Aliados & Eventos</a></li>
+                </ul>
+                <a href="https://wa.me/584124988266?text=¡Hola%20BUBUU!%20✨%20Me%20gustaría%20consultar%20el%20menú%20disponible%20hoy%20🍪" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-primary nav-cta">
+                   Hacer pedido
+                </a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- BOTONES DE REDES SOCIALES FLOTANTES EN EL LATERAL -->
+    <aside class="floating-socials" aria-label="Redes sociales flotantes de BUBUU">
+        <a href="https://www.instagram.com/bubu83557/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="float-btn float-ig" 
+           title="Instagram @bubu83557"
+           aria-label="Instagram @bubu83557">
+            <span class="float-icon">◎</span>
+            <span class="float-label">@bubu83557</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@bubu83557" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="float-btn float-tt" 
+           title="TikTok @bubu83557"
+           aria-label="TikTok @bubu83557">
+            <span class="float-icon">♪</span>
+            <span class="float-label">TikTok</span>
+        </a>
+
+        <a href="https://wa.me/584124988266?text=¡Hola%20BUBUU!%20✨%20Me%20gustaría%20consultar%20disponibilidad%20🍪" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="float-btn float-wa" 
+           title="WhatsApp +584124988266"
+           aria-label="WhatsApp +584124988266">
+            <span class="float-icon">💬</span>
+            <span class="float-label">WhatsApp</span>
+        </a>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- SECCIÓN HERO -->
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="badge">📍 La Guaira, Venezuela • Hechos al momento</span>
+                    <h1 class="hero-title">El antojo más <span class="highlight">dulce</span> y artesanal para ti.</h1>
+                    <p class="hero-subtitle">
+                        Galletas rellenas, marquesas, cookie pies y cajas para compartir. Elige tus sabores, siropes y toppings favoritos y consulta disponibilidad al instante.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/584124988266?text=¡Hola%20BUBUU!%20✨%20Quisiera%20consultar%20los%20sabores%20disponibles%20🍪" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-primary btn-lg">
+                            Escribir al WhatsApp
+                        </a>
+                        <a href="#productos" class="btn btn-secondary btn-lg">Ver productos</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="mascot-card" id="mascot-card">
+                        <img src="logo.png" alt="Mascota oficial de BUBUU" class="mascot-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="mascot-fallback" style="display: none;">
+                            <span>🍪</span>
+                            <p>Coloca aquí tu imagen <strong>logo.png</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE PRODUCTOS -->
+        <section class="products" id="productos">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Nuestro Menú</span>
+                    <h2 class="section-title">Elige tu favorito y personalízalo</h2>
+                    <p class="section-desc">Preparamos cada pedido a tu preferencia. Haz clic en el producto que te provoque para consultar sabores y disponibilidad.</p>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card reveal">
+                        <div class="product-img-wrapper">
+                            <img src="p1.jpg" alt="Galletas rellenas artesanales" onerror="this.src='https://placehold.co/400x300/F6EEC9/3D2314?text=p1.jpg'">
+                            <span class="tag">Clásico</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">🍪 Galletas</h3>
+                            <p class="product-desc">Eliges el sabor de tu preferencia y vienen deliciosamente rellenas por dentro.</p>
+                            <button class="btn btn-card inquiry-btn" data-product="Galletas rellenas">
+                                Consultar disponibilidad
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card reveal">
+                        <div class="product-img-wrapper">
+                            <img src="p2.jpg" alt="Marquesas artesanales" onerror="this.src='https://placehold.co/400x300/F29B9B/3D2314?text=p2.jpg'">
+                            <span class="tag">Cremoso</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">🍰 Marquesas</h3>
+                            <p class="product-desc">Suaves, cremosas y hechas en capas. Eliges los toppings de tu preferencia.</p>
+                            <button class="btn btn-card inquiry-btn" data-product="Marquesas">
+                                Consultar disponibilidad
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card reveal">
+                        <div class="product-img-wrapper">
+                            <img src="p3.jpg" alt="Cajita de 4 mini galletas" onerror="this.src='https://placehold.co/400x300/DF9A68/3D2314?text=p3.jpg'">
+                            <span class="tag">Para regalar</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">📦 Cajita de 4 mini galletas</h3>
+                            <p class="product-desc">Vienen rellenas y tú eliges el topping de tu preferencia para cada una.</p>
+                            <button class="btn btn-card inquiry-btn" data-product="Cajita de 4 mini galletas">
+                                Consultar disponibilidad
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="product-card reveal">
+                        <div class="product-img-wrapper">
+                            <img src="p4.jpg" alt="Cookie pie relleno de chocolate" onerror="this.src='https://placehold.co/400x300/5A321E/FDFBF7?text=p4.jpg'">
+                            <span class="tag">Especial</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">🥧 Cookie pie</h3>
+                            <p class="product-desc">Viene relleno de chocolate; puedes elegir el sirope y topping que desees.</p>
+                            <button class="btn btn-card inquiry-btn" data-product="Cookie pie">
+                                Consultar disponibilidad
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Producto 5 -->
+                    <article class="product-card reveal">
+                        <div class="product-img-wrapper">
+                            <img src="p5.jpg" alt="Caja mini chip más dip" onerror="this.src='https://placehold.co/400x300/F6EEC9/3D2314?text=p5.jpg'">
+                            <span class="tag">Para compartir</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">📦 Caja mini chip + dip</h3>
+                            <p class="product-desc">Incluye 20 mini chips + dip de 3 sabores (chocolate blanco, chocolate negro y arequipe).</p>
+                            <button class="btn btn-card inquiry-btn" data-product="Caja mini chip + dip">
+                                Consultar disponibilidad
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARRUSEL EDITORIAL DE REFERENCIAS (30 FOTOS: 1.jpg ... 30.jpg) -->
+        <section class="gallery-section" id="galeria">
+            <div class="container">
+                <div class="gallery-header reveal">
+                    <div class="gallery-title-group">
+                        <span class="partners-eyebrow">CALIDAD ARTESANAL BUBUU</span>
+                        <h2 class="gallery-title">Sabor, Calidad y Momentos Inolvidables</h2>
+                        <p class="gallery-subtitle">Cada detalle está pensado para disfrutar lo mejor de nuestro sabor y convertir cualquier día o celebración en un recuerdo especial.</p>
+                    </div>
+
+                    <div class="gallery-controls">
+                        <div class="gallery-counter">
+                            <span id="gallery-current">01</span>
+                            <span class="counter-sep">/</span>
+                            <span id="gallery-total">30</span>
+                        </div>
+                        <div class="gallery-arrows">
+                            <button class="gallery-btn" id="gallery-prev" aria-label="Foto anterior">&#8592;</button>
+                            <button class="gallery-btn" id="gallery-next" aria-label="Siguiente foto">&#8594;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-viewport reveal" id="carousel-viewport">
+                <div class="carousel-track" id="carousel-track"></div>
+            </div>
+
+            <div class="container">
+                <div class="gallery-progress-wrapper">
+                    <div class="gallery-progress-bar" id="gallery-progress-bar"></div>
+                </div>
+                <p class="gallery-hint">Haz clic en cualquier fotografía para verla en alta resolución</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DELUXE: ALIADOS COMERCIALES, COBERTURA Y EVENTOS -->
+        <section class="deluxe-b2b" id="aliados">
+            <div class="deluxe-bg-glow"></div>
+            <div class="container">
+                
+                <div class="deluxe-header reveal">
+                    <span class="deluxe-kicker">BUBUU BUSINESS & EVENTS • LA GUAIRA</span>
+                    <h2 class="deluxe-title">Eleva la experiencia dulce de tu negocio o celebración</h2>
+                    <p class="deluxe-subtitle">
+                        Desarrollamos alianzas comerciales de alto rendimiento para locales en todo el litoral guaireño y diseñamos mesas de postres artesanales a medida para eventos exclusivos.
+                    </p>
+
+                    <div class="deluxe-tabs" role="tablist" aria-label="Modalidades de negocio">
+                        <button class="deluxe-tab active" role="tab" aria-selected="true" data-tab="comercios">
+                            Aliados Comerciales (Locales)
+                        </button>
+                        <button class="deluxe-tab" role="tab" aria-selected="false" data-tab="eventos">
+                            Mesa de Productos & Eventos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PANEL 1: ALIADOS COMERCIALES -->
+                <div class="deluxe-panel active" id="panel-comercios" role="tabpanel">
+                    <div class="deluxe-grid">
+                        <div class="spotlight-card reveal">
+                            <div class="card-num">01</div>
+                            <h3>Abastecimiento Mayorista</h3>
+                            <p>Estructura de precios escalonada por volumen diseñada para maximizar el margen de ganancia de cafeterías, bodegones, minimarkets y panaderías.</p>
+                            <ul class="deluxe-list">
+                                <li>Pedidos mínimos flexibles para iniciar</li>
+                                <li>Alta rotación garantizada en mostrador</li>
+                            </ul>
+                        </div>
+
+                        <div class="spotlight-card reveal">
+                            <div class="card-num">02</div>
+                            <h3>Presentación Lista para Vitrina</h3>
+                            <p>Nuestros productos se entregan con empaque sellado, etiquetado limpio y estética impecable que proyecta calidad artesanal frente a tus clientes.</p>
+                            <ul class="deluxe-list">
+                                <li>Conservación óptima de textura y frescura</li>
+                                <li>Formatos individuales y cajas exhibidoras</li>
+                            </ul>
+                        </div>
+
+                        <div class="spotlight-card reveal">
+                            <div class="card-num">03</div>
+                            <h3>Cobertura Logística en La Guaira</h3>
+                            <p>Despacho programado y puntual directamente en tu establecimiento comercial, asegurando inventario fresco cada semana sin contratiempos.</p>
+                            <ul class="deluxe-list">
+                                <li>Catia La Mar, Maiquetía y Carlos Soublette</li>
+                                <li>Macuto, Caraballeda, Naiguatá y zonas adyacentes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL 2: MESA DE PRODUCTOS & EVENTOS -->
+                <div class="deluxe-panel" id="panel-eventos" role="tabpanel" hidden>
+                    <div class="deluxe-grid">
+                        <div class="spotlight-card">
+                            <div class="card-num">01</div>
+                            <h3>Estación de Galletas & Cookie Pies</h3>
+                            <p>Montaje visual con nuestras galletas rellenas insignia y cookie pies enteros listos para porcionar, acompañados de siropes y toppings a elección.</p>
+                            <ul class="deluxe-list">
+                                <li>Ideal para bodas, 15 años y graduaciones</li>
+                                <li>Variedad de sabores equilibrados para invitados</li>
+                            </ul>
+                        </div>
+
+                        <div class="spotlight-card">
+                            <div class="card-num">02</div>
+                            <h3>Barra Interactiva Mini Chip + Dips</h3>
+                            <p>Bandejas de mini galletas recién horneadas servidas con fuentes de chocolate blanco, chocolate oscuro y arequipe artesanal para compartir.</p>
+                            <ul class="deluxe-list">
+                                <li>Formato práctico tipo cóctel o mesa central</li>
+                                <li>Reposición calculada según número de invitados</li>
+                            </ul>
+                        </div>
+
+                        <div class="spotlight-card">
+                            <div class="card-num">03</div>
+                            <h3>Eventos Corporativos & Obsequios</h3>
+                            <p>Cajitas personalizadas de mini galletas y marquesas en presentación individual para lanzamientos de marca, reuniones ejecutivas y detalles VIP.</p>
+                            <ul class="deluxe-list">
+                                <li>Cotización personalizada según aforo y fecha</li>
+                                <li>Entrega coordinada en salones y clubes de La Guaira</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE INFERIOR: COBERTURA + ASESORÍA DIRECTA POR WHATSAPP -->
+                <div class="deluxe-concierge reveal">
+                    <div class="concierge-info">
+                        <div class="coverage-badges">
+                            <span class="cov-badge">📍 Catia La Mar</span>
+                            <span class="cov-badge">📍 Maiquetía</span>
+                            <span class="cov-badge">📍 Macuto</span>
+                            <span class="cov-badge">📍 Caraballeda</span>
+                            <span class="cov-badge">📍 Todo Edo. La Guaira</span>
+                        </div>
+                        <h3>Solicita nuestro dossier mayorista o presupuesto para tu evento</h3>
+                        <p>Completa estos datos breves y te atenderemos de inmediato por WhatsApp con una propuesta ajustada a tu local o celebración.</p>
+                    </div>
+
+                    <form class="concierge-form" id="b2b-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="b2b-type">Modalidad de interés</label>
+                                <select id="b2b-type" required>
+                                    <option value="Aliado Comercial (Vender en mi local)">Aliado Comercial (Vender en mi local)</option>
+                                    <option value="Mesa de Productos para Evento">Mesa de Productos para Evento</option>
+                                    <option value="Pedido Corporativo / Regalos">Pedido Corporativo / Regalos</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="b2b-zone">Zona en La Guaira</label>
+                                <select id="b2b-zone" required>
+                                    <option value="Catia La Mar">Catia La Mar</option>
+                                    <option value="Maiquetía / Carlos Soublette">Maiquetía / Carlos Soublette</option>
+                                    <option value="La Guaira / Macuto">La Guaira / Macuto</option>
+                                    <option value="Caraballeda / Tanaguarena">Caraballeda / Tanaguarena</option>
+                                    <option value="Naiguatá / Otra zona">Naiguatá / Otra zona</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="b2b-name">Nombre de tu local o detalles del evento</label>
+                            <input type="text" id="b2b-name" placeholder="Ej. Cafetería Costa Azul / Cumpleaños para 50 personas" required>
+                        </div>
+
+                        <button type="submit" class="btn-deluxe-whatsapp">
+                            <span>Comunicarse por WhatsApp</span>
+                            <span class="btn-arrow">&#8599;</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL LIGHTBOX PARA AMPLIAR FOTOS -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista ampliada">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Foto anterior">&#8592;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Foto BUBUU ampliada" id="lightbox-img">
+            <div class="lightbox-caption">
+                <span id="lightbox-title">Sabor y Calidad BUBUU</span>
+                <span id="lightbox-index">1 / 30</span>
+            </div>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Siguiente foto">&#8594;</button>
+    </div>
+
+    <!-- PIE DE PÁGINA (FOOTER LIMPIO SIN BOTONES EXTRA) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo-brand footer-logo" aria-label="BUBUU">
+                    <span class="letter-b">B</span><span class="letter-u">U</span><span class="letter-b">B</span><span class="letter-u">U</span><span class="letter-u">U</span>
+                </a>
+                <p>Galletas y postres artesanales • La Guaira, Venezuela.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> BUBUU Venezuela. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
