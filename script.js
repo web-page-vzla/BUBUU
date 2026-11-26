@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const zone = document.getElementById('b2b-zone').value;
             const name = document.getElementById('b2b-name').value.trim();
 
-            const message = `Hola equipo de *BUBUU* ✨\n\nMe gustaría recibir información comercial:\n• *Modalidad:* ${type}\n• *Zona en La Guaira:* ${zone}\n• *Local / Evento:* ${name}\n\nQuedo atento(a) a su respuesta.`;
+       const message = `Hola equipo de *BUBUU* ✨\n\nMe gustaría recibir información comercial:\n• *Modalidad:* ${type}\n• *Zona de entrega:* ${zone}\n• *Local / Evento:* ${name}\n\nQuedo atento(a) a su respuesta.`;
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
         });
     }
